@@ -12,36 +12,37 @@ int Libraire::num_libraire = 0;
 //20230325
 
 int main(){
-Books book1;//定义结构体类型Books的变量book1
-Books book2;//定义结构体类型Books的变量book2
+Books book1;//
+Books book2;//
 
-//book1详述
-strcpy(book1.title,"C++教程");
+//book1
+strcpy(book1.title,"C++");
 strcpy(book1.author,"Runoob");
-strcpy(book1.subject,"编程语言");
+strcpy(book1.subject,"缂栫▼");
 book1.book_id = 123;
 
-//book2详述
-strcpy(book2.title,"css教程");
+//book2
+strcpy(book2.title,"css");
 strcpy(book2.author,"Runnoob");
-strcpy(book2.subject,"编程语言");
+strcpy(book2.subject,"缂栫▼");
 book2.book_id = 23414;
 
 
-Libraire myLib01(0);//创建图书馆1
-Libraire myLib02(0);//创建图书馆2
-Libraire myLib03(0);//创建图书馆2
+Libraire myLib01(0);//
+Libraire myLib02(0);//
+Libraire myLib03(0);//
 
 myLib01.add_book(book1);
 myLib01.add_book(book2);
 
 myLib02.add_book(book2);
 
-myLib03 = myLib01+myLib02;//两图书馆合并
-cout<<"图书馆总数为："<<Libraire::num_libraire<<endl;
-cout<<"图书馆3内的图书总数为："<<myLib03.num_book<<endl;
+myLib03 = myLib01+myLib02;//
+cout<<"鍥句功棣嗘�绘暟閲忥細"<<Libraire::num_libraire<<endl;
+cout<<"鍥句功鎬绘暟閲忥細"<<myLib03.num_book<<endl;
+cout<<"鍥句功鍒嗗埆鏈夛細";
 for(int i = 0;i < myLib03.books.size();i++){
-cout<<"图书馆3内的图书分别为："<<myLib03.books[i].title<<",";
+cout<<myLib03.books[i].title<<",";
 }
 cout<<endl;
 

@@ -8,18 +8,18 @@ using namespace std;
 
 class Libraire{
 
-/*----------ÊôĞÔ---------*/
+/*----------å±æ€§---------*/
 private:
-    float money;//¸ÃÍ¼Êé¹İµÄ¼ÛÖµ
+    float money;//
 
 
 protected:
     int num_employe;
 
 public:
-    static int num_libraire;//Í¼Êé¹İµÄÊıÁ¿
-    int num_book;//ÊéµÄ×ÜÁ¿
-    vector<Books> books;//Í¼Êé¹İÄÚÍ¼ÊéĞÅÏ¢
+    static int num_libraire;//
+    int num_book;//
+    vector<Books> books;//
     
 
     
@@ -28,15 +28,15 @@ private:
 void add_money(int num);
 
 
-/*--------·½·¨-------*/
+/*--------æ–¹æ³•-------*/
 
 public:
 Libraire(int num);
 ~Libraire();
-void add_book(Books book1);//Ôö¼ÓÍ¼Êé¹İÄÚÍ¼ÊéµÄ·½·¨
-Libraire operator +(Libraire myLibraire);//Í¼Êé¹İºÏ²¢
+void add_book(Books book1);//
+Libraire operator +(Libraire myLibraire);//
 
-static void readLibNum();//¾²Ì¬³ÉÔ±º¯Êı²»¾ßÓĞthisÖ¸Õë
+static void readLibNum();//
 
 static void addLibNum();
 
